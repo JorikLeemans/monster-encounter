@@ -1,0 +1,41 @@
+<div class="form-group">
+
+    <form (ngSubmit)="OnSubmit()">
+        <mat-form-field appearance="fill" MatFormFieldControl>
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="name"  name="name" placeholder="Name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>HP</mat-label>
+            <input matInput [(ngModel)]="hp" name="hp" >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>CR</mat-label>
+            <input matInput [(ngModel)]="cr" name="cr" >
+        </mat-form-field>        
+        <mat-form-field appearance="fill">
+            <mat-label>Land</mat-label>    
+            <input matInput [(ngModel)]="amountLand" name="amountLand">        
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Swim</mat-label>    
+            <input matInput [(ngModel)]="amountSwim" name="amountSwim">        
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Fly</mat-label>    
+            <input matInput [(ngModel)]="amountFly" name="amountFly">        
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Climb</mat-label>    
+            <input matInput [(ngModel)]="amountClimb" name="amountClimb">        
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Burrow</mat-label>    
+            <input matInput [(ngModel)]="amountBurrow" name="amountBurrow">        
+        </mat-form-field>
+        <button mat-button>Submit</button>
+
+    </form>
+
+
+</div>

@@ -1,0 +1,27 @@
+.head {
+  margin: 20px;
+}
+
+.grid-container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.dashboard-card {
+  flex: 1;
+  width: 47%;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  margin-left: 15px;
+}

@@ -1,0 +1,96 @@
+<div class="head">
+    <h1 class="mat-h1">About</h1>
+    <p class="m-body-1">
+      Dit project is gefocused op het maken van een single page website waar je als je bent ingelogd verschillende mogelijkheden krijgt
+      zoals het uploaden van stl files. Deze files worden opgeslagen in een mongoDB database. Ook kun je alle files die geupload zijn opvragen
+      en bepaalde eigenschappen, zoals de naam, aanpassen. Deze website is gemaakt met behulp van angular op het css framework material angular.
+    </p>
+    </div>
+    <div class="grid-container">
+      
+      
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>
+                <h1 class="mat-h1">Monster</h1>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <div>
+                <p class="mat-body-1">
+                  Dit is de entiteit waarin alle informatie van een bepaald monster wordt opgeslagen:
+                </p>
+                <mat-list role="list">
+                <mat-list-item role="listitem">
+        <!--        <mat-icon mat-list-icon style="font-size: 14px;">fiber_manual_record</mat-icon> --> 
+                 <div class="mat-line"><i>_id</i> Het id van het monster. (Wordt gegenereerd door Mongoose)</div> 
+                </mat-list-item>
+                <mat-list-item role="listitem">
+       <!--          <mat-icon mat-list-icon style="font-size: 14px;">fiber_manual_record</mat-icon> --> 
+                  <div class="mat-line"><i>Name</i> De naam van het monster</div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <div class="mat-line"><i>HP</i> De hoeveelheid levens die het monster heeft</div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <div class="mat-line"><i>CR</i> De challenge rating van het monster</div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <div class="mat-line"><i>Movement</i> Dit is een array van alle soorten movement die het monster heeft</div>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <div class="mat-line"><i>Creator_Id</i> Dit is de Id van de user die dit monster heeft aangemaakt zodat alleen deze het monster kan bewerken/verwijderen</div> 
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <div class="mat-line"><i>?</i> Mogelijk komen er nog meer attributen</div>
+                </mat-list-item>
+                </mat-list>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>
+                <h1 class="mat-h1">User</h1>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <p class="mat-body-1">
+                Niet iedereen mag zo maar bestanden uploaden, hiervoor moet eerst een persoon zichzelf registreren.
+              </p>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+              <div class="mat-line"><i>Username</i> Een gebruiker heeft een username nodig</div> 
+            </mat-list-item>
+            <mat-list-item role="listitem">
+              <div class="mat-line"><i>Password</i> Een gebruiker heeft een wachtwoord nodig</div> 
+            </mat-list-item>
+            <mat-list-item role="listitem">
+              <div class="mat-line"><i>Favorites?</i> Dit is een lijst van monsters die door de gebruiker gefavoriet zijn</div> 
+            </mat-list-item>
+            </mat-list>
+            </mat-card-content>
+          </mat-card>
+          <mat-card class="dashboard-card">
+            <mat-card-header>
+              <mat-card-title>
+                <h1 class="mat-h1">Studentinformatie</h1>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="dashboard-card-content">
+              <p class="mat-body-1">
+               Hier zijn mijn persoonlijke en studentgegevens:
+              </p>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+              <div class="mat-line"><i>Naam</i> Jorik Leemans</div> 
+            </mat-list-item>
+            <mat-list-item role="listitem">
+              <div class="mat-line"><i>Studentnummer</i> 2114808</div> 
+            </mat-list-item>
+            </mat-list>
+            </mat-card-content>
+          </mat-card>
+    
+    </div>
+    
