@@ -8,9 +8,9 @@ import { User } from './user.model';
 export class UserService {
   users: User[] = [
     {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []},
-    {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []},
-    {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []},  
-    {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []},  
+    {id: 2, username: 'User2', password: "password123", favorites: [], monsters: []},
+    {id: 3, username: 'User3', password: "password123", favorites: [], monsters: []},  
+    {id: 4, username: 'User4', password: "password123", favorites: [], monsters: []},  
   ];
 
   constructor() {
