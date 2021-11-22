@@ -7,11 +7,11 @@ import { Monster } from './monster.model';
 })
 export class MonsterService {
   monsters: Monster[] = [
-    {id: 1, name: 'Aarakocra', hp: 13, cr: 0.25, movement: [{movementtype: "land", amount: 20},{movementtype: "fly", amount: 50}]},
-    {id: 2, name: 'Aboleth', hp: 135, cr: 10, movement: [{movementtype: "land", amount: 20},{movementtype: "swim", amount: 40}]},
-    {id: 3, name: 'Abominable Yeti', hp: 137, cr: 9, movement: [{movementtype: "land", amount: 40},{movementtype: "climb", amount: 40}]},
-    {id: 4, name: 'Acolyte', hp: 9, cr: 0.25, movement: [{movementtype: "land", amount: 30}]},  
-    {id: 5, name: 'Adult Black Dragon', hp: 195, cr: 14, movement: [{movementtype: "land", amount: 40},{movementtype: "fly", amount: 80},{movementtype: "swim", amount: 40}]},  
+    {id: 1, name: 'Aarakocra', hp: 13, cr: 0.25, movement: [{movementtype: "land", amount: 20},{movementtype: "fly", amount: 50}], creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}},
+    {id: 2, name: 'Aboleth', hp: 135, cr: 10, movement: [{movementtype: "land", amount: 20},{movementtype: "swim", amount: 40}], creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}},
+    {id: 3, name: 'Abominable Yeti', hp: 137, cr: 9, movement: [{movementtype: "land", amount: 40},{movementtype: "climb", amount: 40}], creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}},
+    {id: 4, name: 'Acolyte', hp: 9, cr: 0.25, movement: [{movementtype: "land", amount: 30}], creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}},  
+    {id: 5, name: 'Adult Black Dragon', hp: 195, cr: 14, movement: [{movementtype: "land", amount: 40},{movementtype: "fly", amount: 80},{movementtype: "swim", amount: 40}], creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}},  
   ];
 
   constructor() {

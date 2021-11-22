@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Monster } from '../monster/monster.model';
 import { MonsterService } from '../monster/monster.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { User } from '../user/user/user.model';
 @Component({
   selector: 'app-monstercreate',
   templateUrl: './monstercreate.component.html',
@@ -24,6 +25,7 @@ export class MonstercreateComponent implements OnInit {
   amountFly: number=0;
   amountClimb: number=0;
   amountBurrow: number=0;
+  creator: User = {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []};
   monsterMovementCount = 0;
   monsterCount =0;
 
@@ -43,7 +45,7 @@ export class MonstercreateComponent implements OnInit {
     this.monster.name = this.name;
     this.monster.hp = this.hp;
     this.monster.cr = this.cr;
-
+    /*Add currentuser as this.monster.creator*/
     console.log(this.amountLand + " land")
     console.log(this.amountSwim + " swim")
     console.log(this.amountFly + " fly")

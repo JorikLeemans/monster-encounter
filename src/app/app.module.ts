@@ -29,6 +29,14 @@ import { MonstercreateComponent } from './monstercreate/monstercreate.component'
 import { FormsModule } from '@angular/forms';
 
 import {MonsterService} from './monster/monster.service';
+import { UserComponent } from './user/user/user.component';
+import { UserdetailComponent } from './user/userdetail/userdetail.component';
+import { UsercreateComponent } from './user/usercreate/usercreate.component';
+import { UsereditComponent } from './user/useredit/useredit.component';
+import { PartyComponent } from './party/party/party.component';
+import { PartydetailComponent } from './party/partydetail/partydetail.component';
+import { PartycreateComponent } from './party/partycreate/partycreate.component';
+import { PartyeditComponent } from './party/partyedit/partyedit.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +48,15 @@ import {MonsterService} from './monster/monster.service';
     MonsterComponent,
     MonsterdetailComponent,
     MonstereditComponent,
-    MonstercreateComponent
+    MonstercreateComponent,
+    UserComponent,
+    UserdetailComponent,
+    UsercreateComponent,
+    UsereditComponent,
+    PartyComponent,
+    PartydetailComponent,
+    PartycreateComponent,
+    PartyeditComponent
   ],
   imports: [
     BrowserModule,
