@@ -1,1 +1,13 @@
-<p>partydetail works!</p>
+<div class="container">
+    <mat-list>
+        <mat-list-item>Id: {{party.id}}</mat-list-item>
+        <mat-list-item>Name: {{party.name}}</mat-list-item>
+        <mat-list-item>Size: {{party.size}}</mat-list-item>
+        <mat-list-item>Campaign: {{party.campaign}}</mat-list-item>
+        <mat-list-item *ngFor="let user of party.users"><span>Users: {{user.username}}</span></mat-list-item>
+    </mat-list>
+    <button class="button" mat-raised-button (click)="editParty()">Edit party!</button>
+    <button class="button" mat-raised-button (click)="deleteParty()">Delete party!</button>
+        
+    
+</div>

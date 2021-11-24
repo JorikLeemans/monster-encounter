@@ -1,1 +1,29 @@
-<p>partycreate works!</p>
+<div class="form-group">
+
+    <form (ngSubmit)="OnSubmit()">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="name"  name="name" placeholder="Name">
+        </mat-form-field>
+  <!--      Wordt berekend aan hoeveelheid users
+      <mat-form-field appearance="fill">
+            <mat-label>Size</mat-label>
+            <input matInput [(ngModel)]="size" name="size" >
+        </mat-form-field>
+    -->
+        <mat-form-field appearance="fill">
+            <mat-label>Campaign</mat-label>
+            <input matInput [(ngModel)]="campaign" name="campaign" >
+        </mat-form-field>        
+        <mat-form-field appearance="fill">
+            <mat-label>Users</mat-label>
+            <!-- Moet een keuze veld worden van alle users-->    
+            <input matInput [(ngModel)]="users" name="users">        
+        </mat-form-field>
+        <button mat-button>Submit</button>
+
+    </form>
+
+
+</div>
+

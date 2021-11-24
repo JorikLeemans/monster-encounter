@@ -14,7 +14,7 @@ import { MonsterService } from './monster.service';
 export class MonsterComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  @ViewChild(MatTable) table!: MatTable<MonsterItem>;
+  @ViewChild(MatTable) table!: MatTable<MonsterItem>; 
   monsterService: MonsterService;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
