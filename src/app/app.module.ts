@@ -37,6 +37,14 @@ import { PartyComponent } from './party/party/party.component';
 import { PartydetailComponent } from './party/partydetail/partydetail.component';
 import { PartycreateComponent } from './party/partycreate/partycreate.component';
 import { PartyeditComponent } from './party/partyedit/partyedit.component';
+import { CampaignComponent } from './campaign/campaign.component';
+import { CampaigndetailComponent } from './campaign/campaigndetail/campaigndetail.component';
+import { CampaigncreateComponent } from './campaign/campaigncreate/campaigncreate.component';
+import { CampaigneditComponent } from './campaign/campaignedit/campaignedit.component';
+import { EncounterComponent } from './encounter/encounter/encounter.component';
+import { EncountercreateComponent } from './encounter/encountercreate/encountercreate.component';
+import { EncounterdetailComponent } from './encounter/encounterdetail/encounterdetail.component';
+import { EncountereditComponent } from './encounter/encounteredit/encounteredit.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +64,15 @@ import { PartyeditComponent } from './party/partyedit/partyedit.component';
     PartyComponent,
     PartydetailComponent,
     PartycreateComponent,
-    PartyeditComponent
+    PartyeditComponent,
+    CampaignComponent,
+    CampaigndetailComponent,
+    CampaigncreateComponent,
+    CampaigneditComponent,
+    EncounterComponent,
+    EncountercreateComponent,
+    EncounterdetailComponent,
+    EncountereditComponent
   ],
   imports: [
     BrowserModule,
