@@ -14,6 +14,14 @@ import { PartyComponent } from './party/party/party.component';
 import { PartycreateComponent } from './party/partycreate/partycreate.component';
 import { PartydetailComponent } from './party/partydetail/partydetail.component';
 import { PartyeditComponent } from './party/partyedit/partyedit.component';
+import { CampaignComponent } from './campaign/campaign/campaign.component';
+import { CampaigncreateComponent } from './campaign/campaigncreate/campaigncreate.component';
+import { CampaigndetailComponent } from './campaign/campaigndetail/campaigndetail.component';
+import { CampaigneditComponent } from './campaign/campaignedit/campaignedit.component';
+import { EncounterComponent } from './encounter/encounter/encounter.component';
+import { EncountercreateComponent } from './encounter/encountercreate/encountercreate.component';
+import { EncounterdetailComponent } from './encounter/encounterdetail/encounterdetail.component';
+import { EncountereditComponent } from './encounter/encounteredit/encounteredit.component';
 
 const routes: Routes = [
   
@@ -32,6 +40,14 @@ const routes: Routes = [
       { path: 'partycreate', component: PartycreateComponent},
       { path: 'partydetail/:id', component: PartydetailComponent},
       { path: 'partyedit/:id', component: PartyeditComponent},
+      { path: 'campaign', component: CampaignComponent},
+      { path: 'campaigncreate', component: CampaigncreateComponent},
+      { path: 'campaigndetail/:id', component: CampaigndetailComponent},
+      { path: 'campaignedit/:id', component: CampaigneditComponent},
+      { path: 'encounter', component: EncounterComponent},
+      { path: 'encountercreate', component: EncountercreateComponent},
+      { path: 'encounterdetail/:id', component: EncounterdetailComponent},
+      { path: 'encounteredit/:id', component: EncountereditComponent},
       { path: '**', redirectTo: '/' }
 
 ];
