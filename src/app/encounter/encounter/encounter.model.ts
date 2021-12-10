@@ -1,4 +1,4 @@
-import { User } from "src/app/user/user/user.model";
+import { User } from "../../user/user/user.model";
 
 export class Encounter {
     id: number=0;

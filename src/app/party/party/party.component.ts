@@ -14,7 +14,7 @@ export class PartyComponent implements AfterViewInit {
 
   partyService: PartyService;
     /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-    displayedColumns = ['id', 'name', 'size', 'campaign', 'users'];
+    displayedColumns = ['id', 'name', 'size', 'campaign', 'players'];
 
   constructor(private service: PartyService, private router: Router) { 
     this.partyService = service;

@@ -1,1 +1,21 @@
-<p>campaigncreate works!</p>
+<div class="form-group">
+
+    <form (ngSubmit)="OnSubmit()">
+        <mat-form-field appearance="fill" MatFormFieldControl>
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="name"  name="name" placeholder="Name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Players</mat-label>
+            <input matInput [(ngModel)]="players" name="players" >
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Encounters</mat-label>
+            <input matInput [(ngModel)]="encounters" name="encounters" >
+        </mat-form-field>        
+        <button mat-button>Submit</button>
+
+    </form>
+
+
+</div>

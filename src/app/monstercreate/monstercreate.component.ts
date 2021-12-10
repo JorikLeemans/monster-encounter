@@ -52,7 +52,7 @@ export class MonstercreateComponent implements OnInit {
     console.log(this.amountClimb + " climb")
     console.log(this.amountBurrow + " burrow")
      
-    var movement = [];
+    //var movement = [];
     if(this.amountLand != 0){
       this.monster.movement.push({movementtype: "land", amount: this.amountLand})   
     }

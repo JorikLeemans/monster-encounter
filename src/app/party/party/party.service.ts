@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { User } from 'src/app/user/user/user.model';
 import { UserService } from 'src/app/user/user/user.service';
 import { Party } from './party.model';
 
@@ -10,16 +9,16 @@ import { Party } from './party.model';
 export class PartyService {
   //users: User[];
   parties: Party[] = [
-    {id: 1, name: 'Party1', size:0, campaign:'Campaign1', users: [{id: 1, username: 'User1', password: "password123", favorites: [], monsters: []},]},
-    {id: 2, name: 'Party2', size:0, campaign:'Campaign1', users: []},
-    {id: 3, name: 'Party3', size:0, campaign:'Campaign1', users: []},
-    {id: 4, name: 'Party4', size:0, campaign:'Campaign1', users: []},
-    {id: 5, name: 'Party5', size:0, campaign:'Campaign1', users: []},  ];
+    {id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]},
+    {id: 2, name: 'Party2', size:0, campaign:'Campaign1', players: []},
+    {id: 3, name: 'Party3', size:0, campaign:'Campaign1', players: []},
+    {id: 4, name: 'Party4', size:0, campaign:'Campaign1', players: []},
+    {id: 5, name: 'Party5', size:0, campaign:'Campaign1', players: []},  ];
 
   constructor(private serviceUser: UserService) {
     console.log('Service constructor aangeroepen');
     for(let i=0; i<this.parties.length; i++)
-    this.parties[i].size = this.parties[i].users.length;
+    this.parties[i].size = this.parties[i].players.length;
    // this.users = this.serviceUser.getUsers();
   }
 

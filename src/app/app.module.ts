@@ -37,7 +37,7 @@ import { PartyComponent } from './party/party/party.component';
 import { PartydetailComponent } from './party/partydetail/partydetail.component';
 import { PartycreateComponent } from './party/partycreate/partycreate.component';
 import { PartyeditComponent } from './party/partyedit/partyedit.component';
-import { CampaignComponent } from './campaign/campaign.component';
+import { CampaignComponent } from './campaign/campaign/campaign.component';
 import { CampaigndetailComponent } from './campaign/campaigndetail/campaigndetail.component';
 import { CampaigncreateComponent } from './campaign/campaigncreate/campaigncreate.component';
 import { CampaigneditComponent } from './campaign/campaignedit/campaignedit.component';
