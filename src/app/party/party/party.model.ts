@@ -5,5 +5,5 @@ export class Party{
     name: string='';
     size: number=0;
     campaign: string='';
-    players: string[]=[];
+    players: string|string[]=[];
 }

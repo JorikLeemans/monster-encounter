@@ -17,17 +17,15 @@
         <td mat-cell *matCellDef="let row">{{row.creator.username}}</td>
       </ng-container>
       <!-- CR Column -->
-      <ng-container matColumnDef="players">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header>Players</th>
-        <td mat-cell *matCellDef="let row">
-          <span *ngFor="let player of row.player">{{player.name}}</span>
-        </td>
+      <ng-container matColumnDef="party">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Party</th>
+        <td mat-cell *matCellDef="let row">{{row.party.name}}</td>
       </ng-container>
       <!-- Movement Column -->
       <ng-container matColumnDef="encounters">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Encounters</th>
         <td mat-cell *matCellDef="let row" >
-        <span *ngFor="let encounter of row.encounter">{{encounter.name}}  </span>
+        <span *ngFor="let encounter of row.encounters">{{encounter.name}}  </span>
         </td>
       </ng-container>
   

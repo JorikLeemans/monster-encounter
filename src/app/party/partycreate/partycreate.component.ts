@@ -13,7 +13,7 @@ export class PartycreateComponent implements OnInit {
   name: string = '';
   size: number=0;
   campaign: string='';
-  users: []=[];
+  players: string="";
   partiesCount: number=0;
 
   
@@ -30,9 +30,10 @@ export class PartycreateComponent implements OnInit {
     console.log(this.name)
     this.party.id = this.partiesCount +1;
     this.party.name = this.name;
-    this.party.size = this.party.users.length;
+    
     this.party.campaign = this.campaign;
-    this.party.users = this.users;
+    this.party.players = this.players.split(',');
+    this.party.size = this.party.players.length;
 
     this.partyService.addParty(this.party);
     this.router.navigate(['/party']);

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Party } from 'src/app/party/party/party.model';
 import { Campaign } from '../campaign/campaign.model';
 import { CampaignService } from '../campaign/campaign.service';
 
@@ -11,7 +12,7 @@ import { CampaignService } from '../campaign/campaign.service';
 export class CampaigncreateComponent implements OnInit {
   campaign: Campaign = new Campaign;
   name: string = "";
-  players: string="";
+  party: Party={id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]};
   encounters: []=[];
   campaignCounter: number=0;
   
@@ -26,7 +27,7 @@ export class CampaigncreateComponent implements OnInit {
 
   OnSubmit(){
 
-   let playersArr = this.players.split(', ');
+  // let playersArr = this.players.split(', ');
 
     console.log(this.name);
     this.campaign.id = this.campaignCounter +1;
@@ -34,7 +35,7 @@ export class CampaigncreateComponent implements OnInit {
   //  for(let i=0; i< playersArr.length; i++){
   //    this.campaign.players.push(playersArr[i])
   //  }
-    this.campaign.players = playersArr;
+    this.campaign.party = this.party;
     this.campaign.encounters = this.encounters;
     // Add current user as creator
     console.log(this.campaign);

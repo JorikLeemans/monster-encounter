@@ -1,1 +1,14 @@
-<p>campaigndetail works!</p>
+<div class="container">
+    <mat-list>
+        <mat-list-item>Id: {{campaign.id}}</mat-list-item>
+        <mat-list-item>Name: {{campaign.name}}</mat-list-item>
+        <mat-list-item>Party: {{campaign.party.name}}</mat-list-item>
+        <a>Encounters:</a>
+        <mat-list-item *ngFor="let encounter of campaign.encounters">{{encounter.name}}</mat-list-item>
+    </mat-list>
+    <button class="button" mat-raised-button (click)="addEncounter()">Add an encounter!</button>
+    <button class="button" mat-raised-button (click)="editCampaign()">Edit campaign!</button>
+    <button class="button" mat-raised-button (click)="deleteCampaign()">Delete campaign!</button>
+        
+    
+</div>

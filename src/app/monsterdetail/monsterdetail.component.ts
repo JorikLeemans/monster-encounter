@@ -30,9 +30,12 @@ export class MonsterdetailComponent implements OnInit {
   }
 
   deleteMonster(){
-    this.monsterService.monsters.splice(this.monster.id - 1, 1);
+    if(confirm("Are you sure you want to delete this campaign?")){
+      this.monsterService.monsters.splice(this.monster.id - 1, 1);
     console.log(this.monster.id);
     this.router.navigate(['monster']);
+    }
+    
   }
 
 }

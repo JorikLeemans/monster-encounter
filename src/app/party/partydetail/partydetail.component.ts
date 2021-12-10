@@ -31,9 +31,12 @@ export class PartydetailComponent implements OnInit {
   }
 
   deleteParty(){
+    if(confirm("Are you sure you want to delete this campaign?")){
     this.partyService.parties.splice(this.party.id - 1, 1);
     console.log(this.party.id);
-    this.router.navigate(['party']);
+    this.router.navigate(['party']);  
+    }
+    
   }
 
 }

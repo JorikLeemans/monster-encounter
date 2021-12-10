@@ -1,3 +1,5 @@
+import { Encounter } from "src/app/encounter/encounter/encounter.model";
+import { Party } from "src/app/party/party/party.model";
 import { User } from "../../user/user/user.model";
 
 export class Campaign{
@@ -6,8 +8,10 @@ export class Campaign{
     creator: User = {
         id: 1, username: 'User1', password: "password123", favorites: [], monsters: []
     };
-    players: String[]=[];
-    encounters: []=[];
+    party: Party={
+        id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]
+    };
+    encounters: Encounter[]=[];
 
 
 }

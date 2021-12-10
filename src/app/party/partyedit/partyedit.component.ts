@@ -12,15 +12,15 @@ import { PartyService } from '../party/party.service';
 export class PartyeditComponent implements OnInit {
   party: Party = new Party;
   name: string='';
-  campaign: string='';
-  users: User[]=[];
+  //campaign: string='';
+  players: string='';
 
   constructor(private partyService: PartyService, private router: Router, private route: ActivatedRoute) {
     this.party = this.partyService.getPartyById(this.route.snapshot.params.id);
     console.log(this.party);
     this.name = this.party.name;
-    this.campaign = this.party.campaign;
-    this.users = this.party.users;
+  //  this.campaign = this.party.campaign;
+    this.players = <string>this.party.players;
    }
 
   ngOnInit(): void {
@@ -30,9 +30,10 @@ export class PartyeditComponent implements OnInit {
     console.log(this.name);
 
     this.party.name = this.name;
-    this.party.campaign = this.campaign;
-    this.party.size = this.users.length;
-    this.party.users = this.users;
+  //  this.party.campaign = this.campaign;
+    <string[]>this.party.players;
+    this.party.players = this.players.split(',');
+    this.party.size = this.party.players.length;
 
     this.partyService.updateParty(this.party);
     this.router.navigate(['/party'])

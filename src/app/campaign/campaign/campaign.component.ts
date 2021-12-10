@@ -17,7 +17,7 @@ export class CampaignComponent implements AfterViewInit {
   @ViewChild(MatTable) table!: MatTable<Campaign>;
   campaignService: CampaignService;
 
-  displayedColumns = ['id', 'name', 'creator', 'players', 'encounters']
+  displayedColumns = ['id', 'name', 'creator', 'party', 'encounters']
 
   constructor(private service: CampaignService, private router: Router) {
     this.campaignService = service;

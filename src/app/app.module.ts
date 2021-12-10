@@ -27,6 +27,7 @@ import { MonsterdetailComponent } from './monsterdetail/monsterdetail.component'
 import { MonstereditComponent } from './monsteredit/monsteredit.component';
 import { MonstercreateComponent } from './monstercreate/monstercreate.component';
 import { FormsModule } from '@angular/forms';
+import { MatSelect, MatSelectModule } from '@angular/material/select';
 
 import {MonsterService} from './monster/monster.service';
 import { UserComponent } from './user/user/user.component';
@@ -45,6 +46,7 @@ import { EncounterComponent } from './encounter/encounter/encounter.component';
 import { EncountercreateComponent } from './encounter/encountercreate/encountercreate.component';
 import { EncounterdetailComponent } from './encounter/encounterdetail/encounterdetail.component';
 import { EncountereditComponent } from './encounter/encounteredit/encounteredit.component';
+import { CampaignencounterComponent } from './campaign/campaignencounter/campaignencounter.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,8 @@ import { EncountereditComponent } from './encounter/encounteredit/encounteredit.
     EncounterComponent,
     EncountercreateComponent,
     EncounterdetailComponent,
-    EncountereditComponent
+    EncountereditComponent,
+    CampaignencounterComponent
   ],
   imports: [
     BrowserModule,
@@ -93,6 +96,7 @@ import { EncountereditComponent } from './encounter/encounteredit/encounteredit.
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSelectModule,
   ],
   providers: [
     MonsterService

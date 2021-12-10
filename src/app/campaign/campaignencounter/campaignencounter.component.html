@@ -2,8 +2,12 @@
 
     <form (ngSubmit)="OnSubmit()">
         <mat-form-field appearance="fill" MatFormFieldControl>
-            <mat-label>Name</mat-label>
-            <input matInput [(ngModel)]="name"  name="name" placeholder="Name">
+            <mat-label>Encounter</mat-label>
+            <mat-select [(ngModel)]="encounter"  name="encounter">
+                <mat-option *ngFor="let encounter of encounters" [value]="encounter">
+                    {{encounter.name}}
+                </mat-option>
+                </mat-select>
         </mat-form-field>
      <!--   <mat-form-field appearance="fill">
             <mat-label>Campaign</mat-label>

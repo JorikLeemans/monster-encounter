@@ -7,10 +7,10 @@ import { Campaign } from './campaign.model';
 })
 export class CampaignService {
   campaigns: Campaign[] = [
-    {id: 1, name: 'Campaign1', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, players: [], encounters: []},
-    {id: 2, name: 'Campaign2', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, players: [], encounters: []},
-    {id: 3, name: 'Campaign3', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, players: [], encounters: []}, 
-    {id: 4, name: 'Campaign4', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, players: [], encounters: []},
+    {id: 1, name: 'Campaign1', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, party: {id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]}, encounters: []},
+    {id: 2, name: 'Campaign2', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, party: {id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]}, encounters: []},
+    {id: 3, name: 'Campaign3', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, party: {id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]}, encounters: []}, 
+    {id: 4, name: 'Campaign4', creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, party: {id: 1, name: 'Party1', size:0, campaign:'Campaign1', players: ["Jaap", "Bart"]}, encounters: [{id: 1, name: "Encounter1", creator: {id: 1, username: 'User1', password: "password123", favorites: [], monsters: []}, players: [], monsters: [], difficulty: 2}]},
   ];
 
   constructor() {
