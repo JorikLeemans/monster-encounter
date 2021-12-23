@@ -23,6 +23,8 @@ import { EncountercreateComponent } from './encounter/encountercreate/encounterc
 import { EncounterdetailComponent } from './encounter/encounterdetail/encounterdetail.component';
 import { EncountereditComponent } from './encounter/encounteredit/encounteredit.component';
 import { CampaignencounterComponent } from './campaign/campaignencounter/campaignencounter.component';
+import { EncountermonsterComponent } from './encounter/encountermonster/encountermonster.component';
+
 const routes: Routes = [
   
       { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
@@ -49,6 +51,7 @@ const routes: Routes = [
       { path: 'encounterdetail/:id', component: EncounterdetailComponent},
       { path: 'encounteredit/:id', component: EncountereditComponent},
       { path: 'campaignencounter/:id', component: CampaignencounterComponent},
+      { path: 'encountermonster/:id', component: EncountermonsterComponent},
       { path: '**', redirectTo: '/' }
 
 ];

@@ -1,1 +1,17 @@
-<p>encounterdetail works!</p>
+<div class="container">
+    <mat-list>
+        <mat-list-item>Id: {{encounter.id}}</mat-list-item>
+        <mat-list-item>Name: {{encounter.name}}</mat-list-item>
+        <mat-list-item>Creator: {{encounter.creator.username}}</mat-list-item>
+        <a>Players:</a>
+        <mat-list-item ><span>{{encounter.players}}</span></mat-list-item> <!--*ngFor="let player of party.players"!-->
+        <a>Monsters:</a>
+        <mat-list-item *ngFor="let monster of encounter.monsters">{{monster.name}}</mat-list-item>
+        <mat-list-item>Difficulty: {{encounter.difficulty}}</mat-list-item>
+           </mat-list>
+    <button class="button" mat-raised-button (click)="addMonster()">Add a monster!</button>
+    <button class="button" mat-raised-button (click)="editEncounter()">Edit encounter!</button>
+    <button class="button" mat-raised-button (click)="deleteEncounter()">Delete encounter!</button>
+        
+    
+</div>

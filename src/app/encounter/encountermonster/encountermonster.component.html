@@ -1,0 +1,22 @@
+<div class="form-group">
+
+    <form (ngSubmit)="OnSubmit()">
+        <mat-form-field appearance="fill" MatFormFieldControl>
+            <mat-label>Monster</mat-label>
+            <mat-select [(ngModel)]="monster"  name="monster">
+                <mat-option *ngFor="let monster of monsters" [value]="monster">
+                    {{monster.name}}
+                </mat-option>
+                </mat-select>
+        </mat-form-field>
+     <!--   <mat-form-field appearance="fill">
+            <mat-label>Campaign</mat-label>
+            <input matInput [(ngModel)]="campaign" name="campaign" >
+        </mat-form-field>-->
+           
+        <button mat-button>Submit</button>
+
+    </form>
+     
+
+</div>

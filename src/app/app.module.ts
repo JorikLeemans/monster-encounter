@@ -47,6 +47,7 @@ import { EncountercreateComponent } from './encounter/encountercreate/encounterc
 import { EncounterdetailComponent } from './encounter/encounterdetail/encounterdetail.component';
 import { EncountereditComponent } from './encounter/encounteredit/encounteredit.component';
 import { CampaignencounterComponent } from './campaign/campaignencounter/campaignencounter.component';
+import { EncountermonsterComponent } from './encounter/encountermonster/encountermonster.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { CampaignencounterComponent } from './campaign/campaignencounter/campaig
     EncountercreateComponent,
     EncounterdetailComponent,
     EncountereditComponent,
-    CampaignencounterComponent
+    CampaignencounterComponent,
+    EncountermonsterComponent
   ],
   imports: [
     BrowserModule,
